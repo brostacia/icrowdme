@@ -1,0 +1,31 @@
+
+/* Glasses
+===================*/
+.glasses {
+	margin-top: 65px;
+	&__inner{
+		display: flex;
+	}
+	&__img {
+		width: 30%;
+		display:flex;
+		align-items:center;
+		justify-content: center;
+	}
+	&__description {
+		width: 70%;
+	}
+
+	&__title {
+		margin-bottom: 35px;
+		font-size: 25.2px;
+		color: #add136;
+
+	}
+
+	&__text {
+		font-size: 17.2px;
+		color: rgba(60,60,60,0.67);
+		line-height: 1.7;
+	}
+}

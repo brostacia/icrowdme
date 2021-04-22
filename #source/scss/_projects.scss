@@ -1,0 +1,41 @@
+
+/* Projects
+===================*/
+.projects {
+	margin-top: 80px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__description {
+		width: 70%;
+	}
+	&__title {
+		font-size: 29.2px;
+		font-weight: 600;
+
+		margin-bottom: 27px;
+	}
+
+	&__text {
+		font-size: 17.2px;
+		color: #8f8f8f;
+		line-height: 1.5;
+	}
+}
+
+.btn--projects{
+	background-color: #fff;
+	border: 1px solid #000;
+	color: rgba(81,81,81,0.7);
+	font-size: 14.9px;
+	font-weight: 600;
+	border-radius: 6px;
+
+	padding: 15px 20px;
+	margin-top: 30px;
+	transition: background-color .1s linear;
+	&:hover{
+		background-color: #e6e6e9;
+	}
+}

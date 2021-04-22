@@ -1,0 +1,119 @@
+/* Header
+===================*/
+.header {
+	display: flex;
+	align-items: center;
+
+	background-color: #fff;
+	text-transform: uppercase;
+	width: 100%;
+	height: 86px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		margin: 0px 0px 0px -80px;
+		padding: 6px 0px 0px 0px;
+		font-size: 31.2px;
+		line-height: 1.2;
+		font-family: 'Nunito', sans-serif;
+
+		color: #6d6e70;
+
+		span{
+			color: #595959;
+		}
+	}
+}
+
+.green-lines{
+	position: relative;
+	display: block;
+	width: 7px;
+	height: 36px;
+	background-color: #8fc63d;
+	border-radius: 3.5px;
+	left: -10px;
+
+	font-size: 0;
+	color: transparent;
+
+	&:before, &:after{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	border-radius: 3.5px;
+	background-color: #8fc63d;
+	}
+	&:before{
+		width: 7px;
+		height: 20px;
+		left: -10px;
+		bottom: 0;
+	}
+	&:after{
+		width: 7px;
+		height: 29px;
+		right: -10px;
+		bottom: 0;
+	}
+	&__circle {
+		position: relative;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: #8fc63d;
+		left: -10px;
+		top: 5px;
+
+	}
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	&__link {
+		margin: 0px 0px 0px 27px;
+		font-size: 13.2px;
+		color: #666666;
+		font-weight: 600;
+
+		transition: color .1s linear;
+		&:first-child {
+			margin-left: 0;
+	  }
+	  &:hover{
+		color: #000;
+		cursor: pointer;
+	  }
+	}
+}
+
+.btn{
+	color:#fff;
+	text-align: center;
+	display: inline-block;
+   // vertical-align: top;
+	background-color: #add136;
+	opacity: 1;
+	transition: opacity .1s linear;
+	&:hover{
+		opacity: 0.7;
+	}
+	&--login {
+		border-radius: 40px;
+		padding: 8px 30px 2px;
+		height: 35px;
+		color: rgba(255,255,255,0.81);
+		font-size: 13.2px;
+	}
+}
+
+
